@@ -1,0 +1,118 @@
+/* .form-control{
+    position: inherit;
+    top: 359px;
+    left: 575px;
+    height: 30px;
+    width: 483px;
+    border: 1px solid blueviolet;
+
+
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    left: 44%;
+    top: 18px;
+    color: blue;
+    border: none;
+    background-color: white;
+    height: 18px;
+}
+.ecomm{
+    position: absolute;
+    z-index: 10;
+    left: 0%;
+    top: 18px;
+    color: blue;
+    border: none;
+    height: 18px;
+}
+.navbar-brand{
+    margin-left: 15px;
+
+
+} */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d6e9e3;
+    
+}
+.ecomm{
+    position: absolute;
+    z-index: 10;
+    left: 0%;
+    top: 18px;
+    color: blue;
+    border: none;
+    height: 18px;
+}
+.nav h1{
+    margin-top: 6px;
+    margin-left: 30px;
+    font-size: 36px;
+    color: blueviolet;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 6px;
+    padding: 0;
+}
+.nav li{
+    margin-top: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav li a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.nav .nav-search{
+    margin-top: 5px;
+    flex: 1;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.nav .nav-search input{
+    flex: 1;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: 35px;
+    border-right: 0px;
+}
+.nav .nav-search button{
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: 35px;
+    border-left: 0px;
+}
+
+h1 a{
+    color: blueviolet;
+    text-decoration: none;
+
+}
+
+.suggested-result{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 40px;
+    border: 1px solid #ddd;
+}
+
+.suggested-result li{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.suggested-result li a{
+    cursor: pointer;
+    color: blueviolet;
+} 

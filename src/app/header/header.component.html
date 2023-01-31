@@ -1,0 +1,32 @@
+
+<nav class="nav">
+    <i class="fas fa-shipping-fast ecomm"></i>
+    <h1><a routerLink="/">e-commerce</a></h1>
+    <div *ngIf="menuType==='default'" class="nav-search">
+        <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search for Products">
+        <!-- <button>Search</button> -->
+        <button class="fas fa-search " (click)="submitSearch(searchInput.value)"></button>
+        <ul class="suggested-result" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a>{{item.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'">
+        <li><a routerLink="seller-auth">Seller</a></li>
+        <li><a routerLink="">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart(0)</a></li>
+    </ul>
+
+    <ul *ngSwitchCase="'seller'">
+        <li><a routerLink="seller-add-product">Add Product</a></li>
+        <li><a routerLink="seller-home">List</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        <!-- titlecase is use for first letter Uppercase Show -->
+        <li><a href="#">{{sellerName | titlecase}}</a></li>
+    </ul> 
+</div>
+</nav>
